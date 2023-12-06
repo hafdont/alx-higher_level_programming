@@ -1,13 +1,14 @@
-Python Hello World Project
+**Python Hello World Project**
+
 This repository contains a collection of Python scripts and programs that cover various fundamental concepts and tasks. The scripts range from basic print statements to more advanced topics like working with linked lists and bytecode.
 
-Project Structure
+**Project Structure**
 The project is organized into several directories, each containing Python scripts related to specific tasks:
 
-0-run: Shell script for running a Python script specified in the environment variable $PYFILE.
+**0-run**: Shell script for running a Python script specified in the environment variable $PYFILE.
 
 Example: ./0-run
-1-run_inline: Shell script for running Python code specified in the environment variable $PYCODE.
+**1-run_inline**: Shell script for running Python code specified in the environment variable $PYCODE.
 
 Example: ./1-run_inline
 2-print.py: Python script that prints a specific string using the print function.
