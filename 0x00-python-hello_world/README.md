@@ -84,3 +84,20 @@ If there is a cycle, the fast pointer will catch up to the slow pointer, and the
 11. How to print a specific message to stderr in Python and exit with status code 1 without using print?
 12.  How to create a Shell script to compile a Python script file specified in an environment variable?
 13. How to write a Python function magic_calculation(a, b) that matches specific Python bytecode?
+
+The magic_calculation function is a simple Python function that takes two parameters, a and b, and performs a mathematical operation based on the provided bytecode. 
+
+1. Function Signature:
+def magic_calculation(a, b):: This line defines a function named magic_calculation that takes two parameters, a and b.
+
+3. Mathematical Operation:
+
+a ** b: This part of the expression calculates a raised to the power of b. It uses the ** operator for exponentiation.
+
+4. Addition:
+98 + (a ** b): The result of the exponentiation operation is added to the constant 98.
+
+5. Return Statement:
+return 98 + (a ** b): The function returns the final result of the addition.
+
+So, the function essentially computes the value of 98 added to the result of raising a to the power of b. If you call this function with specific values for a and b, it will return the result of this mathematical operation.
