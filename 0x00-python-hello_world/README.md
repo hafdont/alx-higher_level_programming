@@ -49,17 +49,38 @@ Usage Instructions
 For each script or program, refer to the provided examples for usage instructions. Additionally, some scripts may require specific environment variables, as indicated in the corresponding section.
 
 Questions List
-How to create a Shell script that runs a Python script specified in an environment variable?
-How to create a Shell script that runs inline Python code specified in an environment variable?
-How to print a specific string using the print function in Python?
-How to print an integer stored in a variable followed by a string without casting the variable into a string?
-How to print a float with a precision of 2 digits without casting the variable into a string?
-How to print a string three times followed by its first 9 characters without using loops or conditional statements?
-How to concatenate strings and print a specific message without using loops or conditional statements?
-How to extract and print specific portions of a string without using loops or conditional statements?
-How to concatenate specific portions of a string and print a new sentence without creating new variables or using string literals?
-How to print "The Zen of Python" by Tim Peters using a Python script within a specific character limit?
-How to check if a singly linked list has a cycle in C without using certain functions?
-How to print a specific message to stderr in Python and exit with status code 1 without using print?
-How to create a Shell script to compile a Python script file specified in an environment variable?
-How to write a Python function magic_calculation(a, b) that matches specific Python bytecode?
+0. How to create a Shell script that runs a Python script specified in an environment variable?
+
+1. How to create a Shell script that runs inline Python code specified in an environment variable?
+
+2. How to print a specific string using the print function in Python?
+
+3. How to print an integer stored in a variable followed by a string without casting the variable into a string?
+
+4. How to print a float with a precision of 2 digits without casting the variable into a string?
+
+5. How to print a string three times followed by its first 9 characters without using loops or conditional statements?
+
+6. How to concatenate strings and print a specific message without using loops or conditional statements?
+
+7. How to extract and print specific portions of a string without using loops or conditional statements?
+
+8. How to concatenate specific portions of a string and print a new sentence without creating new variables or using string literals?
+
+9. How to print "The Zen of Python" by Tim Peters using a Python script within a specific character limit?
+
+10. How to check if a singly linked list has a cycle in C without using certain functions?
+
+  
+The solution uses Floyd's Cycle Detection Algorithm, also known as the "tortoise and hare" algorithm. The basic idea is to have two pointers traverse the list at different speeds. If there is a cycle, the faster pointer will eventually catch up to the slower pointer.
+
+Here is a step-by-step breakdown of the solution:
+
+Two pointers (slow and fast) are initialized to the head of the linked list.
+In each iteration, the slow pointer moves one step, and the fast pointer moves two steps.
+If there is no cycle, the fast pointer will eventually reach the end of the list, and the function returns 0.
+If there is a cycle, the fast pointer will catch up to the slow pointer, and the function returns 1.
+
+11. How to print a specific message to stderr in Python and exit with status code 1 without using print?
+12.  How to create a Shell script to compile a Python script file specified in an environment variable?
+13. How to write a Python function magic_calculation(a, b) that matches specific Python bytecode?
