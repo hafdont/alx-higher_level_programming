@@ -1,3 +1,11 @@
+How to Use
+For each script, refer to the provided examples for usage instructions. Ensure that you have Python installed to run the scripts, and for Task 16, follow the compilation instructions provided in the task description.
+
+Repository Structure
+Directory: alx-higher_level_programming
+Subdirectory: 0x04-python-more_data_structures
+Files: List of Python scripts and C code corresponding to each task
+
 **Python Hello World Project**
 
 This repository contains a collection of Python scripts and programs that cover various fundamental concepts and tasks. The scripts range from basic print statements to more advanced topics like working with linked lists and bytecode.
@@ -94,6 +102,10 @@ def magic_calculation(a, b):: This line defines a function named magic_calculati
 3. Mathematical Operation:
 
 a ** b: This part of the expression calculates a raised to the power of b. It uses the ** operator for exponentiation.
+
+
+Author
+Hafiz Masoud Yusuf
 
 4. Addition:
 98 + (a ** b): The result of the exponentiation operation is added to the constant 98.
