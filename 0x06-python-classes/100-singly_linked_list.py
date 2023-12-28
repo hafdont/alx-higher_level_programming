@@ -1,79 +1,83 @@
-class Node:
-    """A class that defines a node of a singly linked list"""
+#!/usr/bin/python3
+"""My square module"""
 
-    def __init__(self, data, next_node=None):
-        """
-        Initializes a new instance of Node.
 
+class Square:
+    """defines a square"""
+
+    def __init__(self, size=0, position=(0, 0)):
+        """Create a Square
         Args:
-            data (int): The data value of the node.
-            next_node (Node): The next node in the linked list.
-
-        Raises:
-            TypeError: If data is not an integer or next_node is not a Node object.
+            size: length of a side of Square
+            position: where the square is (coordinates)
         """
-        self.data = data
-        self.next_node = next_node
-
-    @property
-    def data(self):
-        """Retrieve the data of the node."""
-        return self.__data
-
-    @data.setter
-    def data(self, value):
-        """Set the data of the node."""
-        if not isinstance(value, int):
-            raise TypeError("data must be an integer")
-        self.__data = value
-
-    @property
-    def next_node(self):
-        """Retrieve the next node in the linked list."""
-        return self.__next_node
-
-    @next_node.setter
-    def next_node(self, value):
-        """Set the next node in the linked list."""
-        if value is not None and not isinstance(value, Node):
-            raise TypeError("next_node must be a Node object")
-        self.__next_node = value
-
-
-class SinglyLinkedList:
-    """A class that defines a singly linked list"""
-
-    def __init__(self):
-        """Initializes an empty singly linked list."""
-        self.head = None
-
-    def sorted_insert(self, value):
-        """
-        Inserts a new Node into the correct sorted position in the list (increasing order).
-
-        Args:
-            value (int): The data value of the new node.
-        """
-        new_node = Node(value)
-
-        if not self.head or value < self.head.data:
-            new_node.next_node = self.head
-            self.head = new_node
-            return
-
-        current = self.head
-        while current.next_node and current.next_node.data < value:
-            current = current.next_node
-
-        new_node.next_node = current.next_node
-        current.next_node = new_node
+        self.size = size
+        self.position = position
 
     def __str__(self):
-        """Prints the entire linked list."""
-        result = []
-        current = self.head
-        while current:
-            result.append(current.data)
-            current = current.next_node
-        return '\n'.join(map(str, result))
+        self.my_print()
 
+    @property
+    def size(self):
+        """"The propery of size as the len of a side of Square
+        Raises:
+            TypeError: if size != int
+            ValueError: if size < 0
+        """
+        return self.__size
+
+    @size.setter
+    def size(self, value):
+        if not isinstance(value, int):
+            raise TypeError('size must be an integer')
+        if value < 0:
+            raise ValueError('size must be >= 0')
+        self.__size = value
+
+    @property
+    def position(self):
+        """property of the coordinates of this Square
+        Raises:
+            TypeError: if value != a tuple of 2 integers < 0
+        """
+        return self.__position
+
+    @position.setter
+    def position(self, value):
+        """set the position of this Square
+        Args: value as a tuple of two positive integers
+        Raises:
+            TypeError: if value is not a tuple or any int in tuple < 0
+        """
+        if not isinstance(value, tuple):
+            raise TypeError('position must be a tuple of 2 positive integers')
+        if len(value) != 2:
+            raise TypeError('position must be a tuple of 2 positive integers')
+        if len([i for i in value if isinstance(i, int) and i >= 0]) != 2:
+            raise TypeError('position must be a tuple of 2 positive integers')
+        self.__position = value
+
+    def area(self):
+        """Get the area of a Square
+        Returns: The size squared
+        """
+        return self.__size * self.__size
+
+    def pos_print(self):
+        """returns the position in spaces"""
+        pos = ""
+        if self.size == 0:
+            return "\n"
+        for w in range(self.position[1]):
+            pos += "\n"
+        for w in range(self.size):
+            for i in range(self.position[0]):
+                pos += " "
+            for j in range(self.size):
+                pos += "#"
+            pos += "\n"
+        return pos
+
+    def my_print(self):
+        """print the square in position"""
+        print(self.pos_print(), end='')
