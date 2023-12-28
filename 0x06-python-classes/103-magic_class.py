@@ -1,41 +1,22 @@
+#!/usr/bin/python3
+"""magic class"""
 import math
 
+
 class MagicClass:
+    """set up the magic"""
+
     def __init__(self, radius=0):
-        """
-        Initializes an instance of MagicClass.
-
-        Args:
-            radius (int or float): The radius of the circle.
-
-        Raises:
-            TypeError: If radius is not a number (int or float).
-        """
-        # Initialize a private attribute __radius
+        """ writing another docstring """
         self.__radius = 0
-
-        # Check if radius is of type int or float
-        if not isinstance(radius, (int, float)):
+        if type(radius) is not int and type(radius) is not float:
             raise TypeError('radius must be a number')
-
-        # Set the value of __radius
         self.__radius = radius
 
     def area(self):
-        """
-        Calculates the area of the circle.
-
-        Returns:
-            float: The area of the circle.
-        """
+        """again with the docstring"""
         return self.__radius ** 2 * math.pi
 
     def circumference(self):
-        """
-        Calculates the circumference of the circle.
-
-        Returns:
-            float: The circumference of the circle.
-        """
+        """such docstring"""
         return 2 * math.pi * self.__radius
-
