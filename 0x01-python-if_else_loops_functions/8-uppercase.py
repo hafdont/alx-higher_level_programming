@@ -3,7 +3,6 @@
 def uppercase(input_str):
     """
     Prints the input string in uppercase followed by a new line.
-    
     Parameters:
     - input_str: The input string
     Returns:
@@ -19,5 +18,4 @@ def uppercase(input_str):
         else:
             result_str += "{}".format(char)
       
-    # Print a new line
     print(result_str)
