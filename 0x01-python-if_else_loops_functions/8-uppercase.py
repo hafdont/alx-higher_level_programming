@@ -9,14 +9,15 @@ def uppercase(input_str):
     Returns:
     - None
     """
+    result_str = ""
     for char in input_str:
         # check if the character is a lowercase letter
         if 'a' <= char <= 'z':
             # convert the lowercase letter to uppercasse using ord() and chr()
             uppercase_char = chr(ord(char) - ord('a') + ord('A'))
-            print("{}".format(uppercase_char), end='')
+            result_str += "{}".format(uppercase_char)
         else:
-            print("{}".format(char), end='')
+            result_str += "{}".format(char)
       
     # Print a new line
-    print()
+    print(result_str)
