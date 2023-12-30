@@ -11,7 +11,7 @@ def print_last_digit(number):
     """
     # Ensure the input is an integer
     if not isinstance(number, int):
-        print("Invalid input. Please provide an integger.")
+        print("Invalid input.")
         return None
 
     # Get the last digit
