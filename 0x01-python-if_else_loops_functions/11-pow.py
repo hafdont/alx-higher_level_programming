@@ -9,7 +9,7 @@ def pow(a, b):
     - b: The exponent
 
     Returns:
-    - The result of a ^ b 
+    - The result of a ^ b
     """
     # Check if the exxponent and base are numbers
     if not isinstance(a, (int, float)) or not isinstance(b, (int, float)):
