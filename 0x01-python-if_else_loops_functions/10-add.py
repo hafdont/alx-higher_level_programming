@@ -14,7 +14,7 @@ def add(a, b):
 
     # Ensure both inputs are integers
     if not isinstance(a, int) or not isinstance(b, int):
-        print("Invalid input. Both inputs must be integers")
+        raise TypeError("Invalid input. both inputs must be integers")
         return None
 
     result = a + b
