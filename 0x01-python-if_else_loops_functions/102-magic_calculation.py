@@ -8,7 +8,7 @@ def magic_calculation(a,b,c)
         return c
     elif c > b:
         # if true, return the sum of 'a' and 'b'
-        reurn a + b
+        return a + b
     else:
         # If none the above conditions are met, return result
-        return a * b - c
+        return a * b - c 
