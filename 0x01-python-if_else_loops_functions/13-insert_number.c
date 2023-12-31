@@ -35,7 +35,7 @@ listint_t *insert_node(listint_t **head, int number)
 	/* Traverse the list to find the correct position for the new node */
 	current = *head;
 	prev = NULL;
-	while (current != NULL && current->n number)
+	while (current != NULL && current->n < number)
 	{
 		prev = current;
 		current = current->next;
