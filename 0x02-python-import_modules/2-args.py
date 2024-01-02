@@ -17,4 +17,3 @@ if __name__ == "__main__":
     # Print each argument and its position
     for i, arg in enumerate(sys.argv[1:], start=1):
         print("{}: {}".format(i, arg))
-
