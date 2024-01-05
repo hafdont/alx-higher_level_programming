@@ -28,7 +28,7 @@ Follow the PEP 8 style guidelines for Python code. Use the pycodestyle tool (ver
 Getting Started
 Clone the Repository:
 
-git clone https://github.com/your-username/alx-higher_level_programming.git
+git clone https://github.com/hafdont/alx-higher_level_programming.git
 Navigate to the Project Directory:
 
 
