@@ -1,4 +1,6 @@
-Python Everything is an Object
+*** Python Everything is an Object ***
+
+
 This project delves into the intricacies of object-oriented programming in Python, focusing on fundamental concepts such as object types, mutability, aliasing, and variable behavior.
 
 Learning Objectives
