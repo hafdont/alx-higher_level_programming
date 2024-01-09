@@ -1,5 +1,6 @@
 #!/usr/bin/python33
-"""Module: file_reader.py - Contains function to read and print a UTF* text file."""
+"""function to read and print a UTF8 text file."""
+
 
 def read_file(filename=""):
     """Reads a text file in UTF-8 encoding and prints its content."""
