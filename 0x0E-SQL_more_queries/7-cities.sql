@@ -1,4 +1,6 @@
 -- Creates a database hbtn_0d_usa witht the table cities.
+-- Grant SELECT privilege on database hbtn_0d_2 to user_0d_2
+-- Create MySQL server user user_0d_2 if not exists
 
 CREATE DATABASE IF NOT EXISTS hbtn_0d_usa;
 
