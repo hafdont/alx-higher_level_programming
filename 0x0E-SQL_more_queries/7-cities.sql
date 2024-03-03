@@ -1,4 +1,5 @@
 -- Creates a database hbtn_0d_usa witht the table cities.
+
 CREATE DATABASE IF NOT EXISTS hbtn_0d_usa;
 
 CREATE TABLE IF NOT EXISTS TABLE 'hbtn_0d_usa'.'cities' (
