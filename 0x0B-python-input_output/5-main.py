@@ -13,7 +13,7 @@ my_dict = {
     'is_active': True,
     'info': {
         'age': 36,
-        'average': 3.14
+        'average': 3.1
     }
 }
 save_to_json_file(my_dict, filename)
