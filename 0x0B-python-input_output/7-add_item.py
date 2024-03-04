@@ -1,6 +1,6 @@
 #!/usr/bin/python3
-
 """Script to add arguments to a python list and save them to a JSON file."""
+
 
 import sys
 from 5-save_to_json_file import save_to_json_file
