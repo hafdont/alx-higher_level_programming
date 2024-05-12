@@ -7,5 +7,5 @@ const num2 = parseInt(process.argv[3]);
 if (!Number.isNaN(num1) && !Number.isNaN(num2)) {
   console.log(add(num1, num2));
 } else {
-  console.log('Missing integer(s)');
+  console.log('NaN');
 }
